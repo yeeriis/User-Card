@@ -1,0 +1,75 @@
+body {
+    font-family: "Quicksand", sans-serif ;
+    font-weight: 500;
+    background: rgb(29,25,94);
+    background: linear-gradient(354deg, rgba(29,25,94,1) 0%, rgba(31,31,156,1) 27%, rgba(0,212,255,1) 100%);
+}
+
+
+.main-container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 40%;
+    
+}
+
+.user-image {
+    width: 125px;
+    height: 150px;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 2px 2px 5px black;
+    scale: 1;
+    transition: 1s;
+}
+
+.user-image:hover {
+    scale: 1.15;
+    border-radius: 25px;
+}
+
+.user-info {
+    z-index: 0;
+    margin-top: 15%;
+    margin-left: 15%;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    background-color: rgba(138, 43, 226, 0.8)
+    
+}
+
+.user-data {
+    padding-left: 25%;
+    padding-top: 4%;
+    font-size: x-large;
+}
+
+.user-description {
+    padding: 5% 10% 0% 5%;
+}
+
+#button-info{
+    background-color: aqua;
+    margin: 5% 5% 0% 5%;
+    padding: 2% 5%;
+    border-radius: 24px;
+    border: none;
+    box-shadow: 2px 2px 5px black;
+    position: absolute;
+    right: 0px;
+    font-weight: bold;
+    scale: 1;
+    transition: 0.5s;
+}
+
+#button-info:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(164, 86, 164);
+    scale: 1.15;
+}

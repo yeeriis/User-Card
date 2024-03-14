@@ -14,7 +14,8 @@ body {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 40%;   
+    width: 30%;  
+    transition: 1s; 
 }
 
 /* End of Main Container */
@@ -82,3 +83,77 @@ body {
 }
 
 /* End of User Info */
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+    /* Main Container Tablet Responsive */
+
+    .main-container {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 50%;   
+    }
+
+    /* End of Main Container */
+
+    /* User Image CSS */
+
+    .user-image {
+        width: 125px;
+        height: 150px;
+        border-radius: 50px;
+        position: absolute;
+        z-index: 1;
+        box-shadow: 2px 2px 5px black;
+        scale: 1;
+        transition: 1s;
+    }
+
+    .user-image:hover {
+        scale: 1.15;
+        border-radius: 25px;
+    }
+
+    /* End of User Image CSS */
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+
+    /* Main Container Tablet Responsive */
+
+    .main-container {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 80%;   
+    }
+
+    /* End of Main Container */
+
+    /* User Image CSS */
+
+    .user-image {
+        width: 100px;
+        height: 125px;
+        border-radius: 50px;
+        position: absolute;
+        z-index: 1;
+        box-shadow: 2px 2px 5px black;
+        scale: 1;
+        transition: 1s;
+    }
+
+    .user-image:hover {
+        scale: 1.05;
+        border-radius: 25px;
+    }
+
+    /* End of User Image CSS */
+}
